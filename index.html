@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Background Color Changer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <h2>Click a button to change background color</h2>
+<div class="container">
 
-    <button id="redBtn">Red</button>
-    <button id="blueBtn">Blue</button>
-    <button id="greenBtn">Green</button>
-    <button id="orangeBtn">Orange</button>
-    <br><br>
-    <button id="resetBtn">Reset</button>
-  </div>
+    <h1><i class="fa-solid fa-cloud-sun"></i> Weather App</h1>
 
-  <script src="script.js"></script>
+    <div class="search-box">
+        <input
+        type="text"
+        id="city"
+        placeholder="Enter city">
+
+        <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div class="weather">
+
+        <img id="icon"
+        src="https://openweathermap.org/img/wn/01d@2x.png">
+
+        <h2 id="temp">--°C</h2>
+
+        <h3 id="cityName">Search a city</h3>
+
+        <p id="description">Weather Condition</p>
+
+        <div class="details">
+
+            <div class="card">
+                <i class="fa-solid fa-droplet"></i>
+                <p>Humidity</p>
+                <h4 id="humidity">--%</h4>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wind"></i>
+                <p>Wind</p>
+                <h4 id="wind">-- km/h</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
